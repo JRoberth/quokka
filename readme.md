@@ -1,70 +1,77 @@
-## Laravel 5 - Simple Location-Based Social Network 
-It's location-based social network developed by [lvntayn](https://github.com/lvntayn), [theoneremains](https://github.com/theoneremains) and [koniqwe](https://github.com/koniqwe) using the Laravel PHP framework.
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-Live - https://around.kim
-
-Demo Pages - https://github.com/lvntayn/laravel-social-network/tree/master/public/images/demo
-
-### Installation
-* git clone https://github.com/lvntayn/laravel-social-network.git projectname
-* cd projectname
-* composer install
-* php artisan key:generate to regenerate secure key
-* create new database and edit .env file for DB settings
-* php artisan migrate —seed
-* edit .env file for APP configuration and Google API Configuration
-* storage, bootstrap/cache and public/cache directories should be writable
-* php artisan storage:link
-* php artisan serve
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
 
-### Include
-* Laravel 5.4 (https://laravel.com/docs/5.4)
-* Bootstrap (http://getbootstrap.com)
-* Bootstrap Dialog (https://github.com/nakupanda/bootstrap3-dialog)
-* Bootstrap Datepicker (https://github.com/uxsolutions/bootstrap-datepicker/)
-* Fancybox (https://github.com/fancyapps/fancybox)
-* Font Awesome (http://fortawesome.github.io/Font-Awesome)
-* gmaps (https://github.com/hpneo/gmaps)
-* SerializeJSON (https://github.com/marioizquierdo/jquery.serializeJSON)
-* Select2 (https://github.com/select2/select2)
 
+### Pasos para hacer funcionar el proyecto en local
+* Entral a la terminal (cmd, gitbash, laragon-terminal, etc) 
+* Introducir el comando git clone https://github.com/JRoberth/quokka.git quokka(editar este ultimo nombre, si quiere asignar otro)
+* Entrar a la raiz del proyecto 
+* Correr el comando composer install para las dependencias
+* Correr el comando php artisan key:generate para la llave de la appliacion
+* Se debe crear una nueva base de datos llamada quokka, editar el archivo .env en caso de que MySQL contenga clave
+* En la terminal en la raiz del proyecto correr el comando php artisan migrate
+* Luego correr el comando php artisan storage:link para crear los link de almacenamiento de imagenes en su propio servidor
 
-### Features
-* Create a profile with a username, profile picture, cover picture, bio and personal information
-* Share Posts, Images
-* Find, follow your friends and send direct message to them
-* Make comments on Posts, Images
-* Like Posts, Images
-* Follow new events with notifications
-* Add hobbies
-* Become a member of a hobby group automatically and interact with other people
-* Hide your profile by sharing your location. Let only the people around you to have access to communicate with you
-* Find people around you at the same location, having same hobby and become a member of an automatically created hobby group
+## About Laravel
 
-### Pages 
-There are 7 pages. which are Home Page for Login and Sign Up,  TimeLine, Direct Messages and Profile you know.
-* Nearby page is for seeing people around you.  
-* Groups are created automatically for people who share the same hobby.  You can see group posts in groups page if you added that specific hobby.  
-* Following & Followers page shows the list of followers and people you are following.  
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
 
-### Packages Included
-* alexpechkarev/google-maps
-* barryvdh/laravel-debugbar
-* barryvdh/laravel-ide-helper
-* nesbot/carbon
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-### Requirements
-* PHP 5.6.4
-* MySQL
+Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
+## Learning Laravel
 
-### Authors
-**lvntayn**
-- https://github.com/lvntayn
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
 
-**theoneremains**
-- https://github.com/theoneremains
+If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-**koniqwe**
-- https://github.com/koniqwe
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
